@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Volontario} from '../../../model/Volontario';
+import {Volontario} from '../../../../model/Volontario';
 import { NgStyle} from '@angular/common';
 
 @Component({
@@ -19,7 +19,7 @@ export class Volontari
   immaginiRuota:string[] =
     [
       "/ruotaFerma.png",
-      "https://www.michaelbransonsmith.net/blog/wp-content/uploads/2015/05/spinning-on-the-torture-wheel.gif"
+      "/ruotaFortuna.gif"
     ];
 
   ruotaGira:boolean=false;
