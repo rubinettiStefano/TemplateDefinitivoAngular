@@ -1,0 +1,30 @@
+1) Creare entità book, estendendo BaseEntity e aggiungendo le proprietà
+  - title
+  - author
+  - year (int)
+
+2) Creare Repository
+
+3) Creare DTOs, uno solo, OutputBookDto, con dentro gli stessi campi del Book Entità
+
+4) Creare servizio, autowirare repo, creare 2 metodi
+  - findAllAsDtos, dove restituisce tutti i book convertendoli in lista di dto
+  - convertToDto, metodo privato di appoggio che prende un libro come parametro
+    e restituisce il dto riempito con quei valori. Mettete l'autore tutto in maiuscolo nel dto (il valore, non il campo)
+
+5) Creare controller, autowirare servizio, creare singolo metodo mappato a
+  - GET /api/books che restituisca tutti i dto
+
+6) Creare interfaccia Book nel model
+
+7) Creare servizio BookState in ANGULAR che:
+  1) abbia un array di book come proprietà
+  2) si inietti nel costruttore http, faccia request get e riempia array
+  3) abbia metodo getBooks, che fa return dell'array
+
+- usare come esempio ShopPage
+8) Creare componente AllBooks, che si inietti servizio e cicli l'array di book nell'html,
+passando i singoli Book al componente figlio single book
+
+- usare come esempio SingleProduct
+9) Creare componente SingleBook, no injection, che prenda in input singolo book e lo grafichi come card
