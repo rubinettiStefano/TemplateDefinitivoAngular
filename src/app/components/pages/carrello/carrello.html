@@ -1,0 +1,4 @@
+@for (id of serv.getCartKeys();track $index)
+{
+  <p>{{serv.getProductById(id).name}}  {{serv.getNumber(id)}}</p>
+}

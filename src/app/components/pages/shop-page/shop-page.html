@@ -1,0 +1,8 @@
+<div class="container row gx-3 gy-3 ms-4">
+@for (p of serv.getProductList();track $index)
+{
+  <div class="col-4">
+    <app-single-product [product]="p" ></app-single-product>
+  </div>
+}
+</div>
