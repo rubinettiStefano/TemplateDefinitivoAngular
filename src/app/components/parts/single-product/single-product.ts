@@ -11,12 +11,20 @@ import {ServizioDiStato} from '../../../../services/servizio-di-stato';
 export class SingleProduct
 {
 
-  @Input() product:Product | null = null;
+  @Input() product:Product | null = null
+
   constructor(private serv:ServizioDiStato) {
   }
 
   aggiungi()
   {
-    this.serv.addProductToCart(this.product!.id);
+
+    this.serv.addProductToCart(this.product!.id)
   }
+
+  //? null safe operator
+  //se il valore precedente non è definito, tutta espressione vale null
+
+  //! ignora il caso di null, trattalo come se fosse solo valore normale
+  //rischia di dare null pointer exception
 }
