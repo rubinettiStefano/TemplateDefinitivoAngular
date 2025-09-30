@@ -4,7 +4,7 @@
   - year (int)
 
 2) Creare Repository
-
+2b) Fate generare nel test una lista di Book per riempire db
 3) Creare DTOs, uno solo, OutputBookDto, con dentro gli stessi campi del Book Entità
 
 4) Creare servizio, autowirare repo, creare 2 metodi
